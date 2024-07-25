@@ -1,13 +1,13 @@
-# Deploy and Configure a MongoDBCommunity Resource #
+# Deploy and Configure a ContosoDB Community Instance Resource #
 
-The [`/config/samples`](../config/samples) directory contains example MongoDBCommunity resources that you can modify and deploy.
+The [`/config/samples`](../config/samples) directory contains example ContosoDB Community resources that you can modify and deploy.
 
 ## Table of Contents
 
 - [Deploy a Replica Set](#deploy-a-replica-set)
 - [Scale a Replica Set](#scale-a-replica-set)
 - [Add Arbiters to a Replica Set](#add-arbiters-to-a-replica-set)
-- [Upgrade your MongoDBCommunity Resource Version and Feature Compatibility Version](#upgrade-your-mongodbcommunity-resource-version-and-feature-compatibility-version)
+- [Upgrade your ContosoDB Community Resource Version and Feature Compatibility Version](#upgrade-your-mongodbcommunity-resource-version-and-feature-compatibility-version)
   - [Example](#example)
 - [Deploy Replica Sets on OpenShift](#deploy-replica-sets-on-openshift)
 - [Define a Custom Database Role](#define-a-custom-database-role)
@@ -16,22 +16,22 @@ The [`/config/samples`](../config/samples) directory contains example MongoDBCom
 
 ## Deploy a Replica Set
 
-**Warning:** When you delete MongoDB resources, persistent volumes remain
+**Warning:** When you delete ContosoDB Instance resources, persistent volumes remain
 to help ensure that no unintended data loss occurs. If you create a new 
-MongoDB resource with the same name and persistent volumes, the 
-pre-existing data might cause issues if the new MongoDB resources have a
+ContosoDB resource with the same name and persistent volumes, the 
+pre-existing data might cause issues if the new ContosoDB Instance have a
 different topology than the previous ones.
 
 To deploy your first replica set:
 
-1. Replace `<your-password-here>` in [config/samples/mongodb.com_v1_mongodbcommunity_cr.yaml](../config/samples/mongodb.com_v1_mongodbcommunity_cr.yaml) to the password you wish to use.
+1. Replace `<your-password-here>` in [config/samples/contosodb.com_v1_contosodbcommunity_cr.yaml](../config/samples/mongodb.com_v1_mongodbcommunity_cr.yaml) to the password you wish to use.
 2. Invoke the following `kubectl` command:
    ```
-   kubectl apply -f config/samples/mongodb.com_v1_mongodbcommunity_cr.yaml --namespace <my-namespace>
+   kubectl apply -f config/samples/contosodb.com_v1_contosodbcommunity_cr.yaml --namespace <my-namespace>
    ```
-3. Verify that the MongoDBCommunity resource deployed:
+3. Verify that the ContosoDB Community resource deployed:
    ```
-   kubectl get mongodbcommunity --namespace <my-namespace>
+   kubectl get contosodbcommunity --namespace <my-namespace>
    ```
 
 4. The Community Kubernetes Operator creates secrets that contains users' connection strings and credentials.
