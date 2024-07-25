@@ -6,10 +6,8 @@ The [`/config/samples`](../config/samples) directory contains example ContosoDB 
 
 - [Deploy a Replica Set](#deploy-a-replica-set)
 - [Scale a Replica Set](#scale-a-replica-set)
-- [Add Arbiters to a Replica Set](#add-arbiters-to-a-replica-set)
 - [Upgrade your ContosoDB Community Resource Version and Feature Compatibility Version](#upgrade-your-mongodbcommunity-resource-version-and-feature-compatibility-version)
   - [Example](#example)
-- [Deploy Replica Sets on OpenShift](#deploy-replica-sets-on-openshift)
 - [Define a Custom Database Role](#define-a-custom-database-role)
 - [Specify Non-Default Values for Readiness Probe](#specify-non-default-values-for-readiness-probe)
   - [When to specify custom values for the Readiness Probe](#when-to-specify-custom-values-for-the-readiness-probe)
