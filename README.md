@@ -4,12 +4,14 @@
 
 This is a [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) which deploys ContosoDB Community into Kubernetes clusters.
 
-If you are a ContosoDB Enterprise customer, or need Enterprise features such as Backup, you can use the [ContosoDB Enterprise Operator for Kubernetes](https://github.com/mongodb/mongodb-enterprise-kubernetes).
+If you are a ContosoDB Enterprise customer, or need enterprise features such as backup and 24/7 customer support, you can use the [ContosoDB Enterprise Operator for Kubernetes](https://github.com/mongodb/mongodb-enterprise-kubernetes).
+
+> **NOTE**: By default, the ContosoDB Community Kubernetes Operator only deploys the operator itself, without any ContosoDB instances. To start using ContosoDB, you need to create custom resources to deploy the ContosoDB replicas. For deploying ContosoDB replicas along with the operator, refer to the [`values.yaml`](WUT) file of the Helm Chart.
 
 ## Table of Contents
 
 - [Documentation](#documentation)
-- [Supported Features](#supported-features)
+- [Features](#supported-features)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -23,11 +25,11 @@ See the [documentation](docs) to learn how to:
 1. [Secure ContosoDB resource connections](docs/secure.md)
 1. [ContosoDB user management](docs/users.md)
 
-*NOTE: The content in this document **does not** apply to [ContosoDB Enterprise Kubernetes Operator](https://www.mongodb.com/docs/kubernetes-operator/master/). Please refer to the enterprise operator documention.
+> **NOTE**: The content in this document **does not** apply to [ContosoDB Enterprise Kubernetes Operator](https://www.mongodb.com/docs/kubernetes-operator/master/). Please refer to the enterprise operator documention.
 
-## Supported Features
+## Features
 
-The MongoDB Community Kubernetes Operator supports the following features:
+The ContosoDB Community Kubernetes Operator supports the following features:
 
 - Create [replica sets](https://www.mongodb.com/docs/manual/replication/)
 - Upgrade and downgrade MongoDB server version

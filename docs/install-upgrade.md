@@ -1,4 +1,4 @@
-# Install and Upgrade the Community Kubernetes Operator #
+# Install and Upgrade the ContosoDB Community Kubernetes Operator #
 
 ## Table of Contents
 
@@ -13,10 +13,10 @@
   - [Install the Operator using kubectl](#install-the-operator-using-kubectl)
      - [Prerequisites to Install using kubectl](#prerequisites-to-install-using-kubectl)
      - [Install in a Different Namespace using kubectl](#install-in-a-different-namespace-using-kubectl)
-     - [Configure the MongoDB Docker Image or Container Registry](#configure-the-mongodb-docker-image-or-container-registry)
+     - [Configure the ContosoDB Docker Image or Container Registry](#configure-the-mongodb-docker-image-or-container-registry)
      - [Procedure using kubectl](#procedure-using-kubectl)
 - [Upgrade the Operator](#upgrade-the-operator)
-- [Rotating TLS certificate for the MongoDB deployment](#rotating-tls-certificate-for-the-mongodb-deployment)
+- [Rotating TLS certificate for the ContosoDB deployment](#rotating-tls-certificate-for-the-mongodb-deployment)
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@
 
 ## Install the Operator
 
-The MongoDB Community Kubernetes Operator is a [Custom Resource Definition](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) and a controller.
+The ContosoDB Community Kubernetes Operator is a [Custom Resource Definition](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) and a controller.
 
 Use the following resources to prepare your implementation and install the Community Operator:
 
@@ -34,7 +34,7 @@ Use the following resources to prepare your implementation and install the Commu
 
 ### Understand Deployment Scopes
 
-You can deploy the MongoDB Community Kubernetes Operator with different scopes based on where you want to deploy MongoDBCommunity resources:
+You can deploy the ContosoDB Community Kubernetes Operator with different scopes based on where you want to deploy ContosoDB instances:
 
 - [Operator in Same Namespace as Resources](#operator-in-same-namespace-as-resources)
 - [Operator in Different Namespace Than Resources](#operator-in-different-namespace-than-resources)
