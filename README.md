@@ -1,29 +1,15 @@
-# MongoDB Community Kubernetes Operator #
+# ContosoDB Community Kubernetes Operator #
 
-<img align="right" src="https://mongodb-kubernetes-operator.s3.amazonaws.com/img/Leaf-Forest%402x.png">
+![logo](./docs/contosodb-logo.png)
 
-This is a [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) which deploys MongoDB Community into Kubernetes clusters.
+This is a [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) which deploys ContosoDB Community into Kubernetes clusters.
 
-If you are a MongoDB Enterprise customer, or need Enterprise features such as Backup, you can use the [MongoDB Enterprise Operator for Kubernetes](https://github.com/mongodb/mongodb-enterprise-kubernetes).
-
-Here is a talk from MongoDB Live 2020 about the Community Operator:
-* [Run it in Kubernetes! Community and Enterprise MongoDB in Containers](https://www.youtube.com/watch?v=2Xszdg-4T6A&t=1368s)
-
-> **Note**
->
-> Hi, I'm Dan Mckean 👋 I'm the Product Manager for MongoDB's support of Kubernetes.
->
-> The [Community Operator](https://github.com/mongodb/mongodb-kubernetes-operator) is something I inherited when I started, but it doesn't get as much attention from us as we'd like, and we're trying to understand how it's used in order to establish it's future. It will help us establish exactly what level of support we can offer, and what sort of timeframe we aim to provide support in 🙂
->
->Here's a super short survey (it's much easier for us to review all the feedback that way!): [https://docs.google.com/forms/d/e/1FAIpQLSfwrwyxBSlUyJ6AmC-eYlgW_3JEdfA48SB2i5--_WpiynMW2w/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLSfwrwyxBSlUyJ6AmC-eYlgW_3JEdfA48SB2i5--_WpiynMW2w/viewform?usp=sf_link)
->
-> If you'd rather email me instead: [dan.mckean@mongodb.com](mailto:dan.mckean@mongodb.com?subject=MongoDB%20Community%20Operator%20feedback)
+If you are a ContosoDB Enterprise customer, or need Enterprise features such as Backup, you can use the [ContosoDB Enterprise Operator for Kubernetes](https://github.com/mongodb/mongodb-enterprise-kubernetes).
 
 ## Table of Contents
 
 - [Documentation](#documentation)
 - [Supported Features](#supported-features)
-  - [Planned Features](#planned-features)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -31,13 +17,13 @@ Here is a talk from MongoDB Live 2020 about the Community Operator:
 
 See the [documentation](docs) to learn how to:
 
-1. [Install or upgrade](docs/install-upgrade.md) the Operator.
-1. [Deploy and configure](docs/deploy-configure.md) MongoDB resources.
-1. [Configure Logging](docs/logging.md) of the MongoDB resource components.
-1. [Create a database user](docs/users.md) with SCRAM authentication.
-1. [Secure MongoDB resource connections](docs/secure.md) using TLS.
+1. [Install or upgrade the Operator](docs/install-upgrade.md)
+1. [Deploy and configure ContosoDB resources](docs/deploy-configure.md)
+1. [Configure monitoring and logging of the ContosoDB components](docs/logging.md)
+1. [Secure ContosoDB resource connections](docs/secure.md)
+1. [ContosoDB user management](docs/users.md)
 
-*NOTE: [MongoDB Enterprise Kubernetes Operator](https://www.mongodb.com/docs/kubernetes-operator/master/) docs are for the enterprise operator use case and NOT for the community operator. In addition to the docs mentioned above, you can refer to this [blog post](https://www.mongodb.com/blog/post/run-secure-containerized-mongodb-deployments-using-the-mongo-db-community-kubernetes-oper) as well to learn more about community operator deployment*
+*NOTE: The content in this document **does not** apply to [ContosoDB Enterprise Kubernetes Operator](https://www.mongodb.com/docs/kubernetes-operator/master/). Please refer to the enterprise operator documention.
 
 ## Supported Features
 
